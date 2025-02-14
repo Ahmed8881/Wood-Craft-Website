@@ -1,1 +1,30 @@
-<p>hero works!</p>
+<section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="hero-title">
+          Custom Wooden
+          <span class="highlight">Laser Engraved</span>
+          Keychains
+        </h2>
+        <p class="hero-description">
+          Create your unique wooden keychain with personalized laser engraving.
+          Premium craftsmanship meets personal expression.
+        </p>
+        <div class="hero-buttons">
+          <button class="primary">Start Designing</button>
+          <button class="secondary">View Gallery</button>
+        </div>
+      </div>
+      <div class="hero-input">
+        <input 
+          type="text" 
+          [value]="customText" 
+          (input)="onInputChange($event)" 
+          placeholder="Type your custom message..." 
+          maxlength="20"
+        >
+      </div>
+    </div>
+  </section>
+  
+  
