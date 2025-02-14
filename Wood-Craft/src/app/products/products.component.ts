@@ -1,5 +1,6 @@
 import { Component } from "@angular/core"
-
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 interface Product {
   id: number
   name: string
@@ -11,6 +12,7 @@ interface Product {
 @Component({
   selector: "app-products",
   standalone: true,
+  imports: [CommonModule],
   templateUrl: "./products.component.html",
   styleUrls: ["./products.component.scss"],
 })
