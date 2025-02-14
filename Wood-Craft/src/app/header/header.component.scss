@@ -12,8 +12,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
   }
   
   .logo {
@@ -24,6 +22,17 @@
   .nav-links {
     display: flex;
     gap: 1rem;
+    align-items: center;
+  
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #ffd700;
+      }
+    }
   }
   
   
