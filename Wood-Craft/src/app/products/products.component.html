@@ -1,1 +1,18 @@
-<p>products works!</p>
+<section class="products" id="products">
+    <div class="container">
+      <h2 class="section-title">Our Collection</h2>
+      <div class="product-grid">
+        <div *ngFor="let product of products" class="product-card">
+          <img [src]="product.image" [alt]="product.name">
+          <div class="product-content">
+            <h3>{{product.name}}</h3>
+            <p>{{product.description}}</p>
+            <p class="price">{{product.price}}</p>
+          </div>
+          <button class="primary">Customize & Order</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
