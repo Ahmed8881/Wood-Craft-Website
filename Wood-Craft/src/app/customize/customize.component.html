@@ -1,1 +1,33 @@
-<p>customize works!</p>
+<section class="customize" id="customize">
+    <div class="container">
+      <h2 class="section-title">Customize Your Keychain</h2>
+      <div class="customize-tabs">
+        <button [class.active]="activeTab === 'text'" (click)="setActiveTab('text')">Text</button>
+        <button [class.active]="activeTab === 'image'" (click)="setActiveTab('image')">Image</button>
+        <button [class.active]="activeTab === 'qr'" (click)="setActiveTab('qr')">QR Code</button>
+      </div>
+      <div class="customize-content">
+        <div *ngIf="activeTab === 'text'" class="customize-form">
+          <select>
+            <option value="">Select Wood Type</option>
+            <option *ngFor="let wood of woodTypes" [value]="wood">{{wood}}</option>
+          </select>
+          <input type="text" placeholder="Enter your message">
+          <select>
+            <option value="">Select Font Style</option>
+            <option *ngFor="let font of fontStyles" [value]="font">{{font}}</option>
+          </select>
+          <button class="primary">Preview Design</button>
+        </div>
+        <div *ngIf="activeTab === 'image'" class="customize-form">
+          <button class="secondary">Upload Image</button>
+        </div>
+        <div *ngIf="activeTab === 'qr'" class="customize-form">
+          <input type="text" placeholder="Enter URL or text for QR code">
+          <button class="primary">Generate QR Code</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  

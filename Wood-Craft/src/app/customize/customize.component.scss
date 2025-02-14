@@ -1,0 +1,54 @@
+.customize {
+    padding: 4rem 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+  }
+  
+  .customize-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  
+    button {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+  
+      &.active {
+        color: #ffd700;
+        border-bottom: 2px solid #ffd700;
+      }
+    }
+  }
+  
+  .customize-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  
+    select, input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+      border-radius: 4px;
+  
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  
+    button {
+      align-self: flex-start;
+    }
+  }
+  
+  

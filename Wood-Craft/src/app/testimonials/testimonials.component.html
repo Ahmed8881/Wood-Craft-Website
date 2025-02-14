@@ -1,1 +1,16 @@
-<p>testimonials works!</p>
+<section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div *ngFor="let testimonial of testimonials" class="testimonial-card">
+          <div class="rating">
+            <i *ngFor="let star of getStars(testimonial.rating)" class="material-icons">star</i>
+          </div>
+          <p>{{testimonial.text}}</p>
+          <p class="name">- {{testimonial.name}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  

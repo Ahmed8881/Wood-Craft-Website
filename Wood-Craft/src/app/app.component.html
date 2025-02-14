@@ -1,3 +1,14 @@
-<app-header></app-header>
-<app-hero (customTextChange)="onCustomTextChange($event)"></app-hero>
-<app-products></app-products>
+<div class="app-container">
+  <div class="scene-container">
+    <app-scene [customText]="customText"></app-scene>
+  </div>
+  <div class="content-container">
+    <app-header></app-header>
+    <app-hero (customTextChange)="onCustomTextChange($event)"></app-hero>
+    <app-products></app-products>
+    <app-features></app-features>
+    <app-customize></app-customize>
+    <app-testimonials></app-testimonials>
+  </div>
+</div>
+
